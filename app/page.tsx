@@ -728,13 +728,14 @@ export default function Portfolio() {
             <Body size="xl" color="secondary" className="mb-12 max-w-3xl mx-auto">
               I create digital experiences that bridge the gap between beautiful design and functional technology.
             </Body>
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl font-medium text-lg"
-            >
-              View My Work
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+<Button
+  size="lg"
+  className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl font-medium text-lg"
+  onClick={() => window.open("https://github.com/valyrian24052", "_blank", "noopener,noreferrer")}
+>
+  View My Work
+  <ArrowRight className="ml-2 h-5 w-5" />
+</Button>
           </div>
         </div>
       </section>
