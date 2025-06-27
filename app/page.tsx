@@ -656,11 +656,10 @@ export default function Portfolio() {
     <div className="min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300">
       {/* Navigation */}
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrollY > 50
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50
             ? "bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-sm dark:shadow-gray-800/20 border-b border-gray-200/20 dark:border-gray-800/20"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -728,14 +727,14 @@ export default function Portfolio() {
             <Body size="xl" color="secondary" className="mb-12 max-w-3xl mx-auto">
               I create digital experiences that bridge the gap between beautiful design and functional technology.
             </Body>
-<Button
-  size="lg"
-  className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl font-medium text-lg"
-  onClick={() => window.open("https://github.com/valyrian24052", "_blank", "noopener,noreferrer")}
->
-  View My Work
-  <ArrowRight className="ml-2 h-5 w-5" />
-</Button>
+            <Button
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 shadow-lg hover:shadow-xl font-medium text-lg"
+              onClick={() => window.open("https://github.com/valyrian24052", "_blank", "noopener,noreferrer")}
+            >
+              View My Work
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </section>
@@ -865,6 +864,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-200 dark:hover:border-blue-700 hover:text-blue-700 dark:hover:text-blue-400 transition-all duration-200 bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-800 text-gray-700 dark:text-gray-200 px-6 py-3 font-medium shadow-md hover:shadow-lg"
+              onClick={() => window.location.href = "mailto:shashanksharma.1214@gmail.com"}
             >
               <Mail className="mr-2 h-4 w-4" />
               Email Me
@@ -873,6 +873,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="rounded-xl hover:bg-gray-900 dark:hover:bg-gray-100 hover:text-white dark:hover:text-gray-900 transition-all duration-200 bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-800 text-gray-700 dark:text-gray-200 px-6 py-3 font-medium shadow-md hover:shadow-lg"
+              onClick={() => window.open("https://github.com/valyrian24052", "_blank", "noopener,noreferrer")}
             >
               <Github className="mr-2 h-4 w-4" />
               GitHub
@@ -881,6 +882,7 @@ export default function Portfolio() {
               variant="outline"
               size="lg"
               className="rounded-xl hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white hover:border-blue-600 dark:hover:border-blue-500 transition-all duration-200 bg-white dark:bg-gray-900 border-gray-300 dark:border-gray-800 text-gray-700 dark:text-gray-200 px-6 py-3 font-medium shadow-md hover:shadow-lg"
+              onClick={() => window.open("https://www.linkedin.com/in/shashanksharma1214/", "_blank", "noopener,noreferrer")}
             >
               <Linkedin className="mr-2 h-4 w-4" />
               LinkedIn
