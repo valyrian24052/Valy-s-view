@@ -388,10 +388,10 @@ function ExperienceStats() {
             <Users className="h-8 w-8 text-white" />
           </div>
           <Heading level={2} className="mb-3 text-green-600 dark:text-green-400">
-            7
+            12+
           </Heading>
           <Body color="secondary" className="font-medium">
-            Companies Worked
+            Projects Worked
           </Body>
         </div>
         <div className="text-center p-8 rounded-3xl bg-white dark:bg-[#1d1d27] shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
@@ -798,7 +798,7 @@ export default function Portfolio() {
               size="lg"
               className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-200 px-8 py-3 rounded-full transition-all duration-200 font-medium shadow-md hover:shadow-lg"
             >
-              {isExperienceExpanded ? "Hide" : "View"} Detailed Experience
+              {isExperienceExpanded ? "Hide" : "View"} All Experiences
               {isExperienceExpanded ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
             </Button>
           </div>
@@ -838,7 +838,7 @@ export default function Portfolio() {
               size="lg"
               className="bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-700 dark:text-gray-200 px-8 py-3 rounded-full transition-all duration-200 font-medium shadow-md hover:shadow-lg"
             >
-              {isProjectsExpanded ? "Show Featured Projects" : "View All Projects"}
+              {isProjectsExpanded ? "Hide All Projects" : "View All Projects"}
               {isProjectsExpanded ? <ChevronUp className="ml-2 h-4 w-4" /> : <ChevronDown className="ml-2 h-4 w-4" />}
             </Button>
           </div>
