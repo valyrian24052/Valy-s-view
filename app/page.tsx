@@ -649,7 +649,7 @@ export default function Portfolio() {
   ]
 
   // Show only first 6 projects initially
-  const featuredProjectsCount = 6
+  const featuredProjectsCount = 0
   const displayedProjects = isProjectsExpanded ? projects : projects.slice(0, featuredProjectsCount)
 
   return (
