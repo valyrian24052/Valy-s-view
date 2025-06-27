@@ -657,17 +657,17 @@ export default function Portfolio() {
       {/* Navigation */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrollY > 50
-            ? "bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-sm dark:shadow-gray-800/20 border-b border-gray-200/20 dark:border-gray-800/20"
-            : "bg-transparent"
+          ? "bg-white/95 dark:bg-black/95 backdrop-blur-sm shadow-sm dark:shadow-gray-800/20 border-b border-gray-200/20 dark:border-gray-800/20"
+          : "bg-transparent"
           }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-<Link href="#">
-  <Heading level={5} className="font-semibold">
-    Shashank Sharma
-  </Heading>
-</Link>
+            <Link href="#">
+              <Heading level={5} className="font-semibold">
+                Shashank Sharma
+              </Heading>
+            </Link>
 
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#about" variant="nav">
