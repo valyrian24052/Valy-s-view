@@ -572,14 +572,14 @@ export default function Portfolio() {
       projectLink: "https://taskflowwwbeta.vercel.app/",
     },
     {
-      company: "TaskFlow Pro",
-      role: "Advanced Task Management Suite",
-      keyOutcome: "Enterprise Task Management",
-      mockupImage: "https://raw.githubusercontent.com/valyrian24052/Project-Demo/main/task.png",
+      company: "Valy Says",
+      role: "Vloggin Site",
+      keyOutcome: "Personal vlogging site",
+      mockupImage: "https://raw.githubusercontent.com/valyrian24052/Project-Demo/main/says.png",
       problemSolved:
         "Built an enterprise-grade task management platform with advanced features like team collaboration, project templates, time tracking, and detailed analytics for improved productivity across organizations.",
       techStack: "React, Node.js, Express.js, PostgreSQL, Redis, WebSocket",
-      projectLink: "https://taskflowwwbeta.vercel.app/",
+      projectLink: "https://valy-says.vercel.app/",
     },
     {
       company: "Dosevisor",
