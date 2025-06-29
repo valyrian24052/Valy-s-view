@@ -575,7 +575,7 @@ export default function Portfolio() {
       company: "Valy Says",
       role: "Vloggin Site",
       keyOutcome: "Personal vlogging site",
-      mockupImage: "https://raw.githubusercontent.com/valyrian24052/Project-Demo/main/says.png",
+      mockupImage: "https://raw.githubusercontent.com/valyrian24052/Project-Demo/main/Says.png",
       problemSolved:
         "Built an enterprise-grade task management platform with advanced features like team collaboration, project templates, time tracking, and detailed analytics for improved productivity across organizations.",
       techStack: "React, Node.js, Express.js, PostgreSQL, Redis, WebSocket",
