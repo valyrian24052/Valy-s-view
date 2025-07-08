@@ -23,14 +23,18 @@ export function MaterialTimeline({ items }: { items: any[] }) {
   return (
     <div className="max-w-4xl mx-auto">
       <div className="relative">
+        {/* Vertical line - thinner and more faded */}
+        <div className="absolute left-[9px] top-0 bottom-0 w-0.5 bg-gradient-to-b from-gray-200 via-gray-100 to-white dark:from-gray-700 dark:via-gray-800 dark:to-[#1d1d27] opacity-60" />
+        
         <div className="space-y-8">
           {items.map((item, index) => {
             const isExpanded = expandedItems.has(index)
             const isCurrent = index === 0
 
             return (
-              <div key={`${item.company}-${index}`} className="relative group">
-                <div className="relative z-10 flex items-center justify-center mb-4">
+              <div key={`${item.company}-${index}`} className="relative flex items-start group">
+                {/* Dot - adjusted position for centering on the line */}
+                <div className="relative z-10 flex-shrink-0 mr-6 mt-3.5"> {/* Adjusted mt to center the dot */}
                   <div
                     className={cn(
                       "w-4 h-4 rounded-full border-4 transition-all duration-300",
@@ -40,7 +44,7 @@ export function MaterialTimeline({ items }: { items: any[] }) {
                     )}
                   />
                   {isCurrent && (
-                    <div className="absolute w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full animate-ping opacity-20" />
+                    <div className="absolute top-0 left-0 w-4 h-4 bg-blue-500 dark:bg-blue-400 rounded-full animate-ping opacity-20" />
                   )}
                 </div>
 
@@ -81,6 +85,12 @@ export function MaterialTimeline({ items }: { items: any[] }) {
                               <Calendar className="w-4 h-4" />
                               <span>{item.period}</span>
                             </div>
+                            {item.location && ( 
+                              <div className="flex items-center gap-1">
+                                <span className="mr-1">•</span>
+                                <span>{item.location}</span>
+                              </div>
+                            )}
                           </div>
                         </div>
                         <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
@@ -102,9 +112,12 @@ export function MaterialTimeline({ items }: { items: any[] }) {
                       </div>
                     </div>
 
-                    {!isExpanded && (
+                    {!isExpanded && item.shortDescription && (
                       <div className="px-6 pb-4">
-                        <Caption color="muted" className="text-xs">
+                        <Body color="secondary" className="leading-relaxed line-clamp-2">
+                          {item.shortDescription}
+                        </Body>
+                        <Caption color="muted" className="text-xs mt-2">
                           Click to expand details
                         </Caption>
                       </div>
